@@ -1,14 +1,19 @@
-'use client';
+"use client";
 
-interface ViewUserButtonProps{
+interface ViewUserButtonProps {
   userId: number;
 }
 
-const ViewUserButton: React.FC<ViewUserButtonProps> = ({userId}) => {
+const ViewUserButton: React.FC<ViewUserButtonProps> = ({ userId }) => {
   const handleClick = () => alert(`user id: ${userId}`);
-  return(
+  return (
     <>
-    <button onClick={handleClick}>Lihat User</button>
+      <button
+        onClick={handleClick}
+        className="bg-purple-500 text-white px-4 py-2 rounded-lg hover:bg-purple-600 transition duration-300"
+      >
+        User ID
+      </button>
     </>
   );
 };

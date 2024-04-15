@@ -1,6 +1,6 @@
 const CardList = ({children} :any) => {
   return(
-    <div className="bg-[tomato] w-full p-4">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
       {children}
     </div>
   )
