@@ -6,16 +6,17 @@ export default function Home() {
       <div className="text-center">
         <h1 className="text-5xl font-bold mb-8">Welcome to Our Website</h1>
         <p className="text-lg mb-8">
-          Explore our amazing collection of posts and albums. 
-          Discover new stories, inspirations, and memories.
+          Explore our amazing collection of posts and albums. Discover new
+          stories, inspirations, and memories.
         </p>
         <div className="flex justify-center space-x-4">
-          <Link href="/posts">
+          <Link href="/posts" className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
             Explore Posts
           </Link>
-          <Link href="/albums">
+          <Link href="/albums" className="bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded">
             Discover Albums
           </Link>
+          
         </div>
       </div>
     </div>
